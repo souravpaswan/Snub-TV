@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.snubtv">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Snub TV"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SnubTV">
+
+        <activity android:name=".splash_screen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"/>
+
+        <activity android:name=".user_profile"/>
+
+    </application>
+
+</manifest>
