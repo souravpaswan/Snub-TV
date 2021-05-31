@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
             VideoView videoView = (VideoView) findViewById(R.id.videoView1);
 
             Uri uri;
-            //Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.second);
 
             if(current_video==1)
                 uri= Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.first);
@@ -135,7 +134,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                     //detect left to right swipe
                     if(x2>x1)
                     {
-                        //Toast.makeText(this,"Right swipe",Toast.LENGTH_SHORT).show();
                         Log.d(TAG,"Right Swipe");
                         startActivity(new Intent(MainActivity.this, user_profile.class));
                     }
@@ -163,7 +161,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                     if(y2 > y1)
                     {
                         Log.d(TAG,"Bottom Swipe");
-                        //Toast.makeText(this,"Bottom swipe",Toast.LENGTH_SHORT).show();
                         if(current_video!=1)
                             current_video-=1;
                         else
@@ -173,7 +170,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                     else
                     {
                         Log.d(TAG,"Top Swipe");
-                        //Toast.makeText(this,"Top swipe",Toast.LENGTH_SHORT).show();
                         if(current_video!=4)
                             current_video+=1;
                         else
