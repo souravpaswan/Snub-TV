@@ -1,4 +1,4 @@
-# Snub-TV
+# Snub TV
 
 
 ## A Full Screen gesture controlled video app that has 4 videos build in the app.
